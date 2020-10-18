@@ -32,6 +32,7 @@ namespace chuckswapic
             services.AddControllers();
             // configure DI for application services
             services.AddTransient<SearchService>();
+            services.AddTransient<ChuckSwapiService>();
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
