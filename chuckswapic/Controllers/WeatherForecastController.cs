@@ -23,6 +23,10 @@ namespace chuckswapic.Controllers
             _logger = logger;
         }
 
+        // GET: <WeatherController>
+        /// <summary>
+        /// Project generated API
+        /// </summary>
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {

@@ -20,8 +20,11 @@ namespace chuckswapic.Controllers
     public class ChuckController : ControllerBase
     {
         static string ChuckURL = "https://api.chucknorris.io/jokes/categories";
-
-        // GET: api/<ChuckController>
+        
+        // GET: <ChuckController>
+        /// <summary>
+        /// Gets all joke categories regarding Chuck Norris
+        /// </summary>
         [HttpGet("categories")]
         public string Get()
         {

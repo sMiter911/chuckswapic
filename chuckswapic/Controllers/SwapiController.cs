@@ -14,7 +14,10 @@ namespace chuckswapic.Controllers
     {
         static string ChuckURL = "https://swapi.dev/api/people/";
 
-        // GET: api/<ChuckController>
+        // GET: <ChuckController>
+        /// <summary>
+        /// Gets all the people related to the Star Wars Universe
+        /// </summary>
         [HttpGet("people")]
         public string Get()
         {

@@ -20,6 +20,13 @@ namespace chuckswapic.Controllers
             _searchService = searchService;
         }
 
+        // GET: <SearchController>
+        /// <summary>
+        /// Searches both Chuck Norris and Star Wars APIs to return single result set
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns>A single result set from</returns>
+        /// <response code="200">Returns results set</response>
         [HttpGet]
         public async Task<ResultSet> getResults([FromQuery] string query)
         {
