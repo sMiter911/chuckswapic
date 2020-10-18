@@ -27,7 +27,7 @@ namespace chuckswapic
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //services.AddTransient<ChuckJokeAPIService>();
+            services.AddTransient<SearchService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
